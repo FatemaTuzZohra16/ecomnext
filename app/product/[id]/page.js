@@ -44,6 +44,7 @@ export default function ProductDetailsPage() {
           </div>
           <h1 className='text-[17px] font-medium'>{singleProduct?.title}</h1>
           <h1 className='text-[17px] font-medium text-black/60'>{singleProduct?.price}</h1>
+          <h1 className='text-[17px] font-medium text-black/60'>{singleProduct?.discount}</h1>
         </div>
       </Container>
     </div>
