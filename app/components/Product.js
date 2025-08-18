@@ -12,17 +12,19 @@ const Product = async() => {
             <div>
                 <h2 className='font-bold text-center text-[30px] mb-[35px]'>Product List</h2>
             </div>
-            <Link href ='/Category'>Category</Link>
+            <Link href ='/'>Category</Link>
            <div className='flex flex-wrap justify-between'>
              {
                 products.products.map((product, id)=>(
                     <div key={product.id}>
-                        <div className='w-[300px] bg-gray-300 p-5 my-5 rounded'>
+                        <div className='w-[300px] bg-gray-300 p-5 my-5 rounded flex items-center justify-center'>
                             <Image src={product.thumbnail} width={200} height={200}/>
                         </div>
                         <h1 className='text-[17px] font-medium'>{product.title}</h1>
                         <h1 className='text-[17px] font-medium text-black/60'>{product.price}</h1>
-                        <Link href ='/SingleProduct'>Details</Link>
+                        <div className='mt-3'>
+                            <Link className='bg-emerald-800 text-white py-1 px-3 rounded' href ={`/product/${product.id}`}>Details</Link>
+                        </div>
                     </div>
                 ))
             }

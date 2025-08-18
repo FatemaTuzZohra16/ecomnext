@@ -13,8 +13,8 @@ export const Navbar = () => {
                 <div>
                     <ul className='flex gap-x-[30px] font-bold'>
                         <Link href='/'>Home</Link>
-                        <Link href='/Category'>Product</Link>
-                        <Link href='/'>Blog</Link>
+                        <Link href='/product'>Product</Link>
+                        <Link href='/cart'>Cart</Link>
                         <Link href='/'>Contact</Link>
                     </ul>
                 </div>
